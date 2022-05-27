@@ -9,6 +9,8 @@ public class SofaMovement : MonoBehaviour {
     public float clockwise = 1000.0f;
     public float counterClockwise = -5.0f;
     [SerializeField] GameObject firevfx;
+    [SerializeField] AudioClip sound;
+    [SerializeField] AudioSource paAudioSource;
 
 
     void Update() {
@@ -26,6 +28,7 @@ public class SofaMovement : MonoBehaviour {
 
     private void OnDisable() {
         GameObject g = Instantiate(firevfx, transform.position, transform.rotation);
-        Destroy(g, 2f);
+        paAudioSource.PlayOneShot(sound);
+        Destroy(g, 0.5f);
     }
 }
