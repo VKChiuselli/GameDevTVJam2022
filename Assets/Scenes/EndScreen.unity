@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Did you see how fast you polluted with a game? Do you know that we in real
+  m_text: Did you see how fast you polluted with a game? Do you know that  in real
     life we are more fast to pollute
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f698a5ceca8a2a44b88f9eb857c5e911, type: 2}
